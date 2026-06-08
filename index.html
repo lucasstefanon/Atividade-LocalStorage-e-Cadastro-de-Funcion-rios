@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Funcionários</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Cadastro de Funcionários</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Novo Funcionário</h2>
+      <form id="form-cadastro">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome completo" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="email@empresa.com" required />
+        </div>
+        <div class="form-group">
+          <label for="cargo">Cargo</label>
+          <input type="text" id="cargo" placeholder="Ex: Analista" required />
+        </div>
+        <div class="form-group">
+          <label for="departamento">Departamento</label>
+          <input type="text" id="departamento" placeholder="Ex: Financeiro" required />
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Senha" required />
+        </div>
+        <button type="submit">Cadastrar Funcionário</button>
+      </form>
+    </section>
+
+    <section class="lista-section">
+      <div class="lista-header">
+        <h2>Funcionários Cadastrados</h2>
+        <span id="contador" class="contador">Total: 0</span>
+      </div>
+      <div id="lista-funcionarios" class="cards-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
