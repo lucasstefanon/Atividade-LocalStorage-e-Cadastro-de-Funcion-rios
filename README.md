@@ -1,4 +1,4 @@
-# Atividade-LocalStorage-e-Cadastro-de-Funcion-rios
+# LocalStorage e Cadastro de Funcionarios
 
 # Nome
 Lucas Stefanon Costa Braga Santos
