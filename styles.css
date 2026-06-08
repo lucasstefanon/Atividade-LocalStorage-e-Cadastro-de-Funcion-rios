@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+main {
+  display: flex;
+  gap: 32px;
+  padding: 32px 40px;
+  align-items: flex-start;
+}
+
+.form-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px;
+  width: 340px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #555;
+}
+
+.form-group input {
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #2c3e50;
+}
+
+button[type='submit'] {
+  width: 100%;
+  padding: 11px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background-color 0.2s;
+}
+
+button[type='submit']:hover {
+  background-color: #1a252f;
+}
+
+.lista-section {
+  flex: 1;
+}
+
+.lista-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.lista-header h2 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.contador {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2c3e50;
+}
+
+.card-nome {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.card-info {
+  font-size: 0.88rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 6px;
+}
+
+.card-info span:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.card-cargo {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #eaf0fb;
+  color: #2c3e50;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-section {
+    width: 100%;
+  }
+}
